@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1071497015933",
+    "firebase_url": "https://fluttercalendar-79f56.firebaseio.com",
+    "project_id": "fluttercalendar-79f56",
+    "storage_bucket": "fluttercalendar-79f56.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1071497015933:android:0104b9f4c47cbf281e7714",
+        "android_client_info": {
+          "package_name": "com.example.flutter_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1071497015933-5956m2ujj4ott16mmeqc2hlkc8emc3fa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_app",
+            "certificate_hash": "9738d79bb7d93adf8ef6ec2428744425a0a17b2e"
+          }
+        },
+        {
+          "client_id": "1071497015933-pu2sptme5bad3ldc2pb6uuqoopv76712.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLbURL8ptS5u6w3tXq53t_kmgfIC-GBJA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071497015933-pu2sptme5bad3ldc2pb6uuqoopv76712.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
