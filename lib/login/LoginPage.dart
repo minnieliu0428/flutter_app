@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'helpers/Constants.dart';
+import '../helpers/Constants.dart';
 
 class LoginPage extends StatefulWidget {
 
@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     final logo = CircleAvatar(
-      backgroundColor: Colors.transparent,
+      backgroundColor: appPinkColor,
       radius: bigRadius,
       child: appLogo,
     );
@@ -118,7 +118,7 @@ class _LoginPageState extends State<LoginPage> {
         onPressed: () {},
         padding: EdgeInsets.all(12),
         color: appPinkColor,
-        child: Text(loginButtonText, style: TextStyle(color: Colors.white)),
+        child: Text(loginButtonText, style: TextStyle(color: Colors.white, fontSize: 20)),
       ),
     );
 

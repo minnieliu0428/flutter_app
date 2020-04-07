@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+// Pages
+const loginPageTag = 'Login Page';
+const detailPageTag = 'Detail Page';
+
 // Colors
 Color appPinkGrayColor = Color.fromRGBO(227, 191, 191, 1.0);
 Color appGrayPinkColor = Color.fromRGBO(130, 116, 116, 1.0);
