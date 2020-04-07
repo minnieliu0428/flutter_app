@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../helpers/Constants.dart';
+import 'package:flutter_app/helpers/Constants.dart';
 
 class LoginPage extends StatefulWidget {
 
