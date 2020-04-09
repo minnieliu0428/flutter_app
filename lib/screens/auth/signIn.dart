@@ -13,11 +13,26 @@ class _SignInState extends State<SignIn> {
   final _accountController = TextEditingController();
   final _passwordController = TextEditingController();
 
+  String account = "";
+  String password = "";
+
   bool _isHidden = true;
 
   void _toggleVisibility() {
     setState(() {
       _isHidden = !_isHidden;
+    });
+  }
+
+  void _setAccout(String val){
+    setState(() {
+      account = val;
+    });
+  }
+
+  void _setPassword(String val){
+    setState(() {
+      password = val;
     });
   }
 
@@ -29,7 +44,10 @@ class _SignInState extends State<SignIn> {
       child: appLogo,
     );
 
-    final account = TextFormField(
+    var account = TextFormField(
+      onChanged: (val){
+        _setAccout(val);
+      },
       controller: _accountController,
       keyboardType: TextInputType.text,
       textInputAction: TextInputAction.next,
@@ -69,6 +87,9 @@ class _SignInState extends State<SignIn> {
 
     final password = TextFormField(
       controller: _passwordController,
+      onChanged: (val){
+        _setPassword(val);
+      },
       keyboardType: TextInputType.text,
       obscureText: _isHidden,
       //是否隱藏輸入的文字
@@ -109,13 +130,15 @@ class _SignInState extends State<SignIn> {
       ),
     );
 
-    final loginButton = Padding(
+    var loginButton = Padding(
       padding: EdgeInsets.symmetric(vertical: 16.0),
       child: RaisedButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
         ),
         onPressed: () async {
+          print(account);
+          print(password);
           dynamic result = await _auth.signInAnonymously();
           if (result == null) {
             print('error sign in');

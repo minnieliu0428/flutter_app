@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_app/models/user.dart';
+import 'package:flutter_app/models/User.dart';
 import 'package:flutter_app/screens/auth/authenticate.dart';
 import 'package:flutter_app/screens/home/home.dart';
 import 'package:provider/provider.dart';
